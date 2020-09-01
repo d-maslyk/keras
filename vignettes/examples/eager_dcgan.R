@@ -175,8 +175,8 @@ generate_and_save_images <- function(model, epoch, test_input) {
   dev.off()
 }
 
-train <- function(dataset, epochs, noise_dim) {
-  for (epoch in seq_len(num_epochs)) {
+train <- function(dataset,epochs, noise_dim) {
+  for (epoch in seq_len(epochs)) {
     start <- Sys.time()
     total_loss_gen <- 0
     total_loss_disc <- 0
